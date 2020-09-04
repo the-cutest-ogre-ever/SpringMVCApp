@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>HeLlO</title>
@@ -7,8 +7,9 @@
 <body>
 H__E__L__L__O
 <hr>
-<a href="/goodbye">tap me!</a>
-<hr>
-<a href="/exit">e__x__i__t</a>
+<a href="/first/goodbye">tap me!</a> or <a href="/exit">e__x__i__t</a>
+or <a href="/hello?name=Elon&surname=Musk">Request with params</a>
+
+<p th:test="${message}">ggg</p>
 </body>
 </html>
